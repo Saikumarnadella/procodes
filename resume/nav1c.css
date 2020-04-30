@@ -1,0 +1,20 @@
+.navbar{
+    background-color:#23415C;
+}
+.nav-link{
+    color:white !important;
+}
+#home{
+    background: url(img_1.jpg) no-repeat center center fixed;
+    display:table;
+    height:100%;
+    position: relative;
+    width:100%;
+    background-size: cover;
+}
+.landing{
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle ;
+    
+}
