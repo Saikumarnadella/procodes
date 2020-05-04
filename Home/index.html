@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="xt.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  .col-lg-12{
+  padding:10px;
+  color:#ccc;
+  border:2px solid red;}
+.jumbotron{
+ background-color:AQUA;
+  }
+.bg-custom{
+ background-color:rgba(192,192,192,0.3);
+  }
+  .navbar .navbar-nav >li .navbar-item ,
+.navbar .navbar-brand{color:mediumspringgreen;}
+.nav-link {
+color: white !important;
+padding:5px !important;
+}
+.nav-link:hover{color:red!important;
+}
+.container-fluid-custom{
+background-color:#33FFAF;
+}
+ .masthead {
+  height:76vh;
+  min-height: 470px;
+  background-color:transperent;
+}
+#a:hover{
+      transform: scale(1.8);
+    
+    }
+  </style>
+  <script tye="text/javascript" src="./xt.js">
+  </script>
+</head>
+<body style="background:linear-gradient(to left,mediumspringgreen,gold)">
+<nav class="navbar navbar-expand-md navbar-dark bg-custom sticky-top shadow">
+    <div class="container-fluid">
+      <input type="button" value="That's It" onmouseover="window.location.reload()" class="navbar-brand btn">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+           <input type="button" id="edubtn" value="Education" onmouseover="EDUhide(this)" class="nav-link btn">
+          </li>
+          <li class="nav-item">
+            <input type="button" id="combtn" value="Compilers" onmouseover="COMhide(this)" class="nav-link btn">
+          </li>
+           <li class="nav-item">
+            <input type="button" id="shobtn" value="Shoping" onmouseover="SHOhide(this)" class="nav-link btn">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div id="searcher" style="display:block">
+<div class="container">
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+  <div class="card col-xs-6 col-sm-8 col-lg-4 col-md-6 offset-lg-4 offset-md-3 offset-sm-2 shadow">
+    <div class="card-body">
+      <img class="card-img-bottom" src="google2.png" alt="Card image" style="width:100%">
+      <p class="card-text">
+      <br><form method="get" action="http://www.google.com/search" target="_blank">
+<input name="q" value="" type="text" class="form-control rounded-pill shadow"  autocomplete="off"></form></p>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</header>
+  </div>
+</div>
+
+<div id="educard" style="display:none">
+<div class="container-fluid">
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+<ul class="list-group col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-md-4 offset-md-4 text-center shadow" style="background-color:rgba(192,192,192,0.3);">
+<li class="list-group-item list-group-item-action"><a href="https://www.geeksforgeeks.org/" target="_blank">Geeks For Geeks</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.sitesbay.com/" target="_blank">Sitebay</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.guru99.com/" target="_blank">Guru99</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://beginnersbook.com/" target="_blank">Begineers Book</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.programiz.com/" target="_blank">Programiz</a></li>
+</ul>
+</div>
+ </div>
+  </div>
+</header>
+</div>
+</div>
+   
+ 
+<div id="ccard" style="display:none">
+<div class="container-fluid">
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+  <ul class="list-group col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-md-4 offset-md-4 text-center shadow" style="background-color:rgba(192,192,192,0.3);">
+<li class="list-group-item list-group-item-action"><a href="https://www.codechef.com/ide" target="_blank">Code Chef</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://paiza.io/projects/8juXViVUwyyowig4F0C8GA?language=c"  target="_blank">Paiza</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.tutorialspoint.com/codingground.htm" target="_blank">Code Ground</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_default" target="_blank">Front By W3</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.onlinegdb.com/online_c_compiler" target="_blank">Online GBD</a></li>
+</ul>
+</div>
+    </div>
+  </div>
+</header>
+</div>
+</div>
+
+<div id="shcard" style="display:none">
+<div class="container-fluid ">
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+ <ul class="list-group col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-md-4 offset-md-4 text-center shadow" style="background-color:rgba(192,192,192,0.3);">
+<li class="list-group-item list-group-item-action"><a href="https://paytm.com/" target="_blank">Paytm</a></li>
+<li class="list-group-item list-group-item-action"><a href="http://www.flipcart.com"  target="_blank">Flipcart</a></li>
+<li class="list-group-item list-group-item-action"><a href="http://www.amazon.in" target="_blank">Amazon</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.myntra.com/" target="_blank">Myntra</a></li>
+<li class="list-group-item list-group-item-action"><a href="https://www.clubfactory.com/" target="_blank">club Factory</a></li>
+</ul>
+</div>
+    </div>
+  </div>
+</header>
+</div>
+</div>
+
+<div class="container">
+  <div class="card col-lg-10 offset-lg-1"  style="background-color:Gainsboro">
+    <div class="card-body"><h6 class="text-center"><small>
+      <a href="http://www.google.com" target="_blank"><i class="fab fa-google mr-4 fa-3x" id="a" style="color:rgb(22, 211, 186)"></i></a>
+      <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-3x mr-4 text-danger" id="a"></i></a>
+      <a href="http://www.hotstar.com" target="_blank"><i class="fas fa-star-of-david text-success mr-4 fa-3x" id="a"></i></a>
+      <a href="http://www.cricbuzz.com" target="_blank"><i class="fas fa-baseball-ball text-danger mr-4 fa-3x" id="a"></i></a>
+      <a href="https://www.eenadu.net" target="_blank"><i class="fa fa-etsy text-primary mr-4 fa-3x" id="a"></i></a>
+      <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#" target="_blank"><i class="far fa-envelope mr-4 fa-3x text-danger" id="a"></i></a>
+      <a href="https://www.tutorialspoint.com/" target="_blank"><i class="fas fa-book mr-4 fa-3x text-warning" id="a"></i></a>
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank"><i class="fas fa-globe-africa mr-4 fa-3x text-success" id="a"></i></a>
+      <a href="https://www.hackerearth.com/practice/" target="_blank"><i class="fas fa-hospital-symbol mr-4 fa-3x text-info" id="a"></i></a>
+      <a href="https://www.hackerrank.com/auth/login?h_l=body_middle_left_button&h_r=login" target="_blank"><i class="fas fa-heading mr-4 fa-3x text-success" id="a"></i></a>
+      <a href="https://www.javatpoint.com/" target="_blank"><i class="fab fa-tumblr mr-4 fa-3x text-warning" id="a"></i></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp mr-4 fa-3x text-success" id="a"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook mr-4 fa-3x text-primary" id="a"></i></a><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram  fa-3x text-danger" id="a"></i></a>
+      <small></h6></div>
+  </div>
+</div>
+
+</body>
+</html>
