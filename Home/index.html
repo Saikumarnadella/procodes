@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>SAI KUMAR NADELLA</title>
+  <title>Bootstrap Card</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -39,20 +39,39 @@ padding:5px !important;
 background-color:#33FFAF;
 }
  .masthead {
-  height:76vh;
-  min-height: 470px;
+  height:85vh;
+  min-height: 490px;
   background-color:transperent;
 }
 #a:hover{
       transform: scale(1.8);
     
     }
+#in:hover{
+      box-shadow: 0px 0px 10px 10px rgba(230, 228, 227, 0.842);
+    }
   </style>
   <script tye="text/javascript" src="./xt.js">
+  
   </script>
+  <script>
+  window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("cc").style.backgroundColor = "orange";
+    document.getElementById("cc").style.color = "black";
+  }
+  else{
+  document.getElementById("cc").style.backgroundColor = "transparent";
+  document.getElementById("cc").style.color = "white";
+  }
+}
+</script>
+
 </head>
-<body style="background:linear-gradient(to left,mediumspringgreen,gold)">
-<nav class="navbar navbar-expand-md navbar-dark bg-custom sticky-top shadow">
+<body style="background:linear-gradient(to left,rgb(113, 14, 226),rgb(10, 181, 223))">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:transparent;color:white" id="cc">
     <div class="container-fluid">
       <input type="button" value="That's It" onmouseover="window.location.reload()" class="navbar-brand btn">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +104,7 @@ background-color:#33FFAF;
       <img class="card-img-bottom" src="google2.png" alt="Card image" style="width:100%">
       <p class="card-text">
       <br><form method="get" action="http://www.google.com/search" target="_blank">
-<input name="q" value="" type="text" class="form-control rounded-pill shadow"  autocomplete="off"></form></p>
+<input name="q" value="" type="text" class="form-control rounded-pill"  autocomplete="off" id="in"></form></p>
     </div>
   </div>
 </div>
@@ -157,7 +176,7 @@ background-color:#33FFAF;
 </div>
 
 <div class="container">
-  <div class="card col-lg-10 offset-lg-1">
+  <div class="card col-lg-10 offset-lg-1"  style="background-color:Gainsboro">
     <div class="card-body"><h6 class="text-center"><small>
       <a href="http://www.google.com" target="_blank"><i class="fab fa-google mr-4 fa-3x" id="a" style="color:rgb(22, 211, 186)"></i></a>
       <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-3x mr-4 text-danger" id="a"></i></a>
