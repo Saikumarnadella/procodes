@@ -34,8 +34,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background:#26da77;
-    color: #fff;
+    background:#631bbb;
     transition: all 0.3s;
 }
 #sidebar.active {
@@ -43,11 +42,11 @@ a:focus {
 }
 #sidebar .sidebar-header {
     padding: 0px;
-    background: #26da77;
+    background: #631bbb;
 }
 #sidebar ul.components {
     padding: 0px 0;
-    border-bottom: 1px solid #26da77;
+    border-bottom: 1px solid #631bbb;
 }
 #sidebar ul p {
     color: #fff;
@@ -59,13 +58,13 @@ a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #631bbb;
     background: #fff;
 }
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #631bbb;
 }
 a[data-toggle="collapse"] {
     position: relative;
@@ -80,7 +79,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background:#631bbb;
 }
 #content {
     width: calc(100% - 250px);
@@ -115,17 +114,40 @@ ul ul a {
 .nav-link:hover{color:red!important;
 }
 .container-fluid-custom{
-background-color:rgb(100, 151, 131);
+background-color:#631bbb;
 }
  .masthead {
-  height:70vh;
-  min-height: 490px;
-  background-color:transperent;
+  height:100vh;
+  min-height: 500px;
+  background-color: transparent;
 }
 #in:hover{
-      box-shadow: 0px 0px 10px 10px rgba(73, 204, 255, 0.842);
+      box-shadow: 0px 0px 10px 10px rgba(201, 197, 197, 0.301);
     }
     #a:hover{
-        transform: scale(1.8);
+        transform: scale(1.2);
       
       }
+ .edulist li,.complist li{
+     margin:4%;
+ }
+ .edulist li a,.complist li a{
+    text-decoration: none;
+    
+}
+.edulist li a:hover,.complist li a:hover{
+    color:rgb(255, 0, 128);
+    
+}
+.ql{
+    color:rgb(255, 0, 128);
+} 
+#uf{
+    color:white;
+}
+#uf:hover{
+    color:rgb(10, 238, 97);
+}
+.bo{
+    border-bottom:2px solid white;
+}
