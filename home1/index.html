@@ -1,246 +1,247 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Collapsible sidebar using Bootstrap 4</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="sidestyle.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <!-- Font Awesome JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="xt.js"></script>
-    <script>
-        window.onscroll = function() {myFunction()};
-      
-      function myFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("cc").style.backgroundColor = "cyan";
-          
-          document.getElementById("cc").style.transition = ".5s";
-        }
-        else{
-        document.getElementById("cc").style.backgroundColor = "#26da77";
-        
-        }
-      }
-      </script>
-</head>
-
-<body>
-
-    <div class="sai">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <center><img src="profilo.png" class="img-fluid rounded-circle" width="40%"></center>
-                <h3 class="text-center text-danger">Sai Kumar Nadella</h3>
-            </div>
-
-            <ul class="list-unstyled components navbar-nav">
-               <!-- <p class="text-center">Home Page</p>-->
-                <li class="nav-item">
-                            <a href="https://saikumarnadella.github.io/procodes/Home1/" class="nav-link">Home</a>
-                        </li>
-                    
-                        <li class="nav-item">
-                            <a href="#" class="nav-link disabled">about</a>
-                        </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link  disabled">Pages</a>
-                    <ul class="collapse list-unstyled navbar-nav" id="pageSubmenu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Page 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Page 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="https://saikumarnadella.github.io/procodes/resume/" class="nav-link" target="_blank">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://finalyears.github.io/studentstuff/" class="nav-link" target="_blank">Final Year Buddies</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background: #26da77;" id="cc">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fa fa-chevron-circle-right"></i>
-                
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <input type="button" id="hmdbtn" value="Home" onmouseover="hmdhide(this)" class="nav-link btn">
-                               </li>
-                            <li class="nav-item">
-                                <input type="button" id="edubtn" value="Education" onmouseover="EDUhide(this)" class="nav-link btn">
-                               </li>
-                               <li class="nav-item">
-                                 <input type="button" id="combtn" value="Compilers" onmouseover="COMhide(this)" class="nav-link btn">
-                               </li>
-                                <li class="nav-item">
-                                 <input type="button" id="shobtn" value="Shopping" onmouseover="SHOhide(this)" class="nav-link btn">
-                               </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-<div id="searcher" style="display:block">
-<div class="container">
-<header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-  <div class="card col-xs-6 col-sm-8 col-lg-4 col-md-6 offset-lg-4 offset-md-3 border border-right-0 border-left-0 border-top-0 border-bottom-0 offset-sm-2">
-    <div class="card-body">
-      <img class="card-img-bottom" src="google2.png" alt="Card image" style="width:100%">
-      <p class="card-text">
-      <br><form method="get" action="http://www.google.com/search" target="_blank">
-<input name="q" value="" type="text" class="form-control rounded-pill"  autocomplete="off" id="in"></form></p>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-</header>
-  </div>
-</div>
-
-  
-<div id="educard" style="display:none">
-    <div class="container-fluid">
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-    <ul class="list-group col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-md-4 offset-md-4 text-center shadow" style="background-color:rgba(192,192,192,0.3);">
-    <li class="list-group-item list-group-item-action"><a href="https://www.geeksforgeeks.org/" target="_blank">Geeks For Geeks</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.sitesbay.com/" target="_blank">Sitebay</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.guru99.com/" target="_blank">Guru99</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://beginnersbook.com/" target="_blank">Begineers Book</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.programiz.com/" target="_blank">Programiz</a></li>
-    </ul>
-    </div>
-     </div>
-      </div>
-    </header>
-    </div>
-    </div>
-       
-     
-    <div id="ccard" style="display:none">
-    <div class="container-fluid">
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-      <ul class="list-group col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-md-4 offset-md-4 text-center shadow" style="background-color:rgba(192,192,192,0.3);">
-    <li class="list-group-item list-group-item-action"><a href="https://www.codechef.com/ide" target="_blank">Code Chef</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://paiza.io/projects/8juXViVUwyyowig4F0C8GA?language=c"  target="_blank">Paiza</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.tutorialspoint.com/codingground.htm" target="_blank">Code Ground</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_default" target="_blank">Front By W3</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.onlinegdb.com/online_c_compiler" target="_blank">Online GBD</a></li>
-    </ul>
-    </div>
-        </div>
-      </div>
-    </header>
-    </div>
-    </div>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="xt.js"></script>
+ <style>
     
-    <div id="shcard" style="display:none">
-    <div class="container-fluid ">
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-     <ul class="list-group col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 col-md-4 offset-md-4 text-center shadow" style="background-color:rgba(192,192,192,0.3);">
-    <li class="list-group-item list-group-item-action"><a href="https://paytm.com/" target="_blank">Paytm</a></li>
-    <li class="list-group-item list-group-item-action"><a href="http://www.flipcart.com"  target="_blank">Flipcart</a></li>
-    <li class="list-group-item list-group-item-action"><a href="http://www.amazon.in" target="_blank">Amazon</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.myntra.com/" target="_blank">Myntra</a></li>
-    <li class="list-group-item list-group-item-action"><a href="https://www.clubfactory.com/" target="_blank">club Factory</a></li>
-    </ul>
+  .card{
+ border-radius:3%;
+}
+.x{
+  width:300px;
+  height:600px;
+  border-radius:12% 11% 7% 5% / 5% 4% 5% 5% ;
+  background:black;
+  border:1px solid black;
+}
+.box{
+  width:100px;
+  height:50px;
+  background-color: black;
+}
+label{  
+  color:rgb(245, 10, 49);
+}
+.lb{
+  background-color: rgb(69, 188, 218);
+}
+ #user_email::placeholder,#user_pass::placeholder,#user_name::placeholder,#user_mbno::placeholder{
+  color:crimson;
+}
+body{
+  background:linear-gradient(to right,rgb(23, 211, 186),rgb(14, 97, 175));
+}
+.nt{
+  color:darkorange;
+}
+.nav-item>.nav-link{
+color:black;
+}
+.nav-item>.nav-link:hover{
+color:orange;
+}
+.nav-item>.nav-link:active{
+color:yellow;
+}
+hr.frm{
+  border:1px solid white;
+  border-radius:5px;
+}
+.inner{
+ width:285px;
+ margin-left: 6px;
+  height:480px;
+ 
+  border-radius:0px;
+
+  background:white;
+  background-size: cover;
+  border:1px solid black;
+  
+}
+.cam{
+  padding-left:0%;
+}
+.doubleinner{
+  width:283px;
+  margin-left:0px;
+  height:450px;
+ overflow:auto;
+  border-radius:0px;
+
+  background:white;
+  border:1px solid white;
+  border-bottom: 2px solid red;
+ 
+  
+}
+.ql{
+    color:rgb(255, 0, 128);
+} 
+#a:hover{
+        transform: scale(1.2);
+      
+      }
+      #in:hover{
+      box-shadow: 0px 0px 10px 10px rgba(201, 197, 197, 0.301);
+    }
+.sound{
+  width:100px;
+  height:0px;
+  border: 2px solid white;
+  
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:white;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(190, 175, 175, 0.904);
+  
+}
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image:url("img_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width:550px) {
+  #imgr {
+    width: 35%;
+  }
+}
+</style>
+
+
+</head>
+<body>
+  
+  <div class="container-fluid">
+  <section>
+    <div class="row">
+      <div class="offset-lg-5 col-lg-4"><div class="container-fluid">
+      <br>
+    <div class=" card x mt-1">
+    <h6><center><i class="fa fa-dot-circle-o mt-3 text-light" aria-hidden="true"></i></center></h6>
+    <div class="card inner mt-2">
+    <div class="card doubleinner" id="bc">
+    <div class="tab-content">
+  <div class="tab-pane active" id="home">
+  <div class="card-body container-fluid align-items-end">
+    <p id="times" class="float-right text-danger"></p><br>
+    <br>
+    <center><img src="profilo.png" class="img-fluid" width="50%"></center>
+  <h4 class="text-danger text-center mt-1">Sai Kumar Nadella</h4>
+ 
+    
+  </div>
+</div>
+  <div class="tab-pane container-fluid fade" id="first">
+  <div class="card-body align-items-center">
+    <h2>first page</h2>
     </div>
+  </div>
+  <div class="tab-pane fade " id="second">
+  <div class="card-body container-fluid align-items-center">
+    <img class="card-img-bottom" src="google2.png" alt="Card image" style="width:100%">
+    <p class="card-text">
+    <br><form method="get" action="http://www.google.com/search" target="_blank">
+<input name="q" value="" type="search" class="form-control rounded-pill"  autocomplete="off" id="in"></form></p>
+<p class="text-center ql" >Quick Links</p>
+<hr>
+<p><a href="http://www.google.com" target="_blank"><i class="fab fa-google fa-2x ml-3" id="a" style="color:rgb(22, 211, 186)"></i></a>
+  <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x text-danger" id="a"></i></a>
+  <a href="http://www.hotstar.com" target="_blank"><i class="fas fa-star-of-david text-success fa-2x" id="a"></i></a>
+  <a href="http://www.cricbuzz.com" target="_blank"><i class="fas fa-baseball-ball text-danger fa-2x" id="a"></i></a>
+  <a href="https://www.eenadu.net" target="_blank"><i class="fa fa-etsy text-primary fa-2x" id="a"></i></a>
+  <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#" target="_blank"><i class="far fa-envelope fa-2x text-danger" id="a"></i></a></p>
+  
+  <p>
+  <a href="https://www.w3schools.com/html/default.asp" target="_blank"><i class="ml-4 fas fa-globe-africa fa-2x text-success" id="a"></i></a>
+  <a href="https://www.hackerearth.com/practice/" target="_blank"><i class="fas fa-hospital-symbol fa-2x text-info" id="a"></i></a>
+  <a href="https://www.hackerrank.com/auth/login?h_l=body_middle_left_button&h_r=login" target="_blank"><i class="fas fa-heading fa-2x text-success" id="a"></i></a>
+  <a href="https://www.javatpoint.com/" target="_blank"><i class="fab fa-tumblr fa-2x text-warning" id="a"></i></a>
+  
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x text-primary" id="a"></i></a>
+  <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram  fa-2x text-danger" id="a"></i></a></p>
+  
+    </div>
+  </div>
+  <div class="tab-pane container-fluid fade" id="third">
+    <div class="card-body align-items-center">
+      <h2>third</h2>
         </div>
+    </div>
+    <div class="tab-pane container-fluid fade" id="forth">
+        <div class="card-body align-items-center">
+              <h2>forth</h2>
+          </div>
       </div>
-    </header>
-    </div>
-    </div>
-    <div class="container">
-        <div class="card col-lg-10 offset-lg-1"  style="background-color:Gainsboro">
-          <div class="card-body"><h6 class="text-center"><small>
-            <a href="http://www.google.com" target="_blank"><i class="fab fa-google mr-3 fa-3x" id="a" style="color:rgb(22, 211, 186)"></i></a>
-            <a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-3x mr-3 text-danger" id="a"></i></a>
-            <a href="http://www.hotstar.com" target="_blank"><i class="fas fa-star-of-david text-success mr-3 fa-3x" id="a"></i></a>
-            <a href="http://www.cricbuzz.com" target="_blank"><i class="fas fa-baseball-ball text-danger mr-3 fa-3x" id="a"></i></a>
-            <a href="https://www.eenadu.net" target="_blank"><i class="fa fa-etsy text-primary mr-3 fa-3x" id="a"></i></a>
-            <a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#" target="_blank"><i class="far fa-envelope mr-4 fa-3x text-danger" id="a"></i></a>
-            <a href="https://www.tutorialspoint.com/" target="_blank"><i class="fas fa-book mr-4 fa-3x text-warning" id="a"></i></a>
-            <a href="https://www.w3schools.com/html/default.asp" target="_blank"><i class="fas fa-globe-africa mr-3 fa-3x text-success" id="a"></i></a>
-            <a href="https://www.hackerearth.com/practice/" target="_blank"><i class="fas fa-hospital-symbol mr-3 fa-3x text-info" id="a"></i></a>
-            <a href="https://www.hackerrank.com/auth/login?h_l=body_middle_left_button&h_r=login" target="_blank"><i class="fas fa-heading mr-4 fa-3x text-success" id="a"></i></a>
-            <a href="https://www.javatpoint.com/" target="_blank"><i class="fab fa-tumblr mr-3 fa-3x text-warning" id="a"></i></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp mr-3 fa-3x text-success" id="a"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook mr-3 fa-3x text-primary" id="a"></i></a><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram  fa-3x text-danger" id="a"></i></a>
-            <small></h6></div>
-        </div>
+     <div class="tab-pane container-fluid fade" id="fifth">
+        <div class="card-body align-items-center">
+            <h3>Best Websites for</h3>
+          </div>
       </div>
-        </div>
+</div>
+</div>
+<ul class="nav nav-pill justify-content-center mt-2">
+  
+  <li class="nav-item">
+  <a class="nav-link" href="#fifth" data-toggle="tab"><i class="fa fa-google" aria-hidden="true"></i></a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#forth" data-toggle="tab"><i class="fa fa-google" aria-hidden="true"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#third" data-toggle="tab"><i class="fa fa-google" aria-hidden="true"></i></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#second" data-toggle="tab"><i class="fa fa-chrome" aria-hidden="true"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#first" data-toggle="tab"><i class="fa fa-google" aria-hidden="true"></i></a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link actie" href="#home" data-toggle="tab"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </li>
+  </ul>
+
     </div>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+    <h6><center><i class="fa fa-square m-2 p-3 rounded-circle bg-dark text-light" aria-hidden="true"></i></center></h6>
+  </div>
+  
+  </div>
+  
+</div>
+<div class="col-lg-8 mt-3">
+  <div class="container-fluid">
+   
+</div>
+</div>
+</div> 
+</section>
+</div>
 </body>
-
 </html>
